@@ -1,0 +1,273 @@
+/* universal selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration:none;
+}
+
+/* color variables */
+:root{
+    --dark-green:#468585;
+    --green:#50B498;
+    --light-green:#9CDBA6;
+    --lightest-green:#DEF9C4;
+}
+
+body{
+    min-height:100vh;
+    overflow-x: hidden;
+}
+
+
+
+/* about container */
+.about-container{
+    background-color:#012118;
+    padding:4rem;
+    width:100%;
+}
+
+.title h1{
+    color:#fff;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform:uppercase;
+    text-align: center;
+    padding:40px 0px;
+}
+.about{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:50px;
+    padding:0px 80px;
+}
+
+.img-section{
+    width:90%;
+    height:auto;
+    margin:auto;
+}
+.img-section img{
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    display:block;
+    margin:auto;
+}
+article{
+    width:90%;
+    text-align: justify;
+}
+article h3{
+    font-size: 22px;
+    font-weight:500;
+    color: #7d7d7d;
+}
+article p{
+    font-size: 17px;
+    color: #fff;
+    margin-top:25px;
+}
+
+article .button{
+    margin-top:35px;
+}
+
+article a{
+    color:#fff;
+    padding:10px 25px;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #f3be00;
+    border-radius:5px
+}
+article a:hover{
+    background-color: #f3be00;
+    transition:0.5s ease;
+}
+
+@media screen and (max-width: 965px)
+{
+    .about-container{
+        margin-top: 15px; 
+    }  
+    .title h1{
+        font-size:28px;
+        text-align: center;
+    }
+    .img-section img{
+       height:200px;
+       width:200px;
+    }
+    .about{
+        flex-direction:column;
+        margin-top:10px;
+        padding:1%;
+    }
+    article{
+        margin-top: 30px;
+    }
+    article h3{
+        font-size:18px;
+    }
+    article p{
+        font-size:15px;
+    }
+    article .button{
+        margin-bottom:50px;
+    }
+    article a{
+        padding:8px 20px;
+        font-size: 17px;
+    }
+}
+ 
+@media screen and (max-width:500px){
+    .about-container{
+        padding: 0.1rem;
+    }
+    .img-section img{
+        height:150px;
+        width:150px;
+     }
+}
+
+/* mission and vision */
+.mission-container{
+    display: flex;
+    padding:4%;
+    margin-top:5%;
+    background-color: #012118;
+    gap:2rem;
+}
+.mission,.vision{
+    background-color: #fff;
+    border-radius: 10px;
+    padding:2%;
+    text-align: justify;
+}
+.heading{
+    text-align: center;
+    font-weight: 700;
+}
+span{
+    color:#f3be00
+}
+@media screen and (max-width:700px){
+    .mission-container{
+        flex-direction: column;
+    }
+}
+
+/* Our team */
+.team-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.column{
+    width:100%;
+    padding: 0.5em 0;
+}
+
+.team-heading h1{
+    width:100%;
+    text-align:center;
+    font-size: 3.5em;
+    color:#012118;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.card{
+    box-shadow:0 0 0.2em rgba(15,0,58,0.15);
+    padding: 3em 1em;
+    border-radius: 0.6em;
+    color:#1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+#leader{
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img-container{
+    width:9em;
+    height:9em;
+    background-color: #37d9ae;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin:0 auto 2em auto;
+}
+
+.card img{
+    width:100%;
+    border-radius: 50%;
+    height:100%;
+}
+
+.card h3{
+    font-weight: 400;
+}
+
+.card p{
+    font-weight: 300;
+    text-transform:uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.icons{
+    width:50%;
+    min-width:100px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.card a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.4rem;
+}
+
+.card:hover{
+    background: linear-gradient(
+        #009970,#46c4a2
+    );
+    color: #fff;
+}
+
+.card:hover .img-container{
+    transform: scale(1.15);
+}
+
+@media screen and (min-width:768px) {
+    section{
+        padding:1em 7em;
+    }
+}
+@media screen and (min-width:992px) {
+    section{
+        padding:1em;
+    }
+    .card{
+        padding: 5em 1em;
+    }
+    .column{
+        flex:0 0  33.33%;
+        max-width: 33.33%;
+        padding:0 1em ;
+    }
+}

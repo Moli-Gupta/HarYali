@@ -1,0 +1,76 @@
+:root{
+    --dark-green:#468585;
+    --green:#50B498;
+    --light-green:#9CDBA6;
+    --lightest-green:#DEF9C4;
+}
+.navbar{
+    background-color:#fff;
+    height:80px;
+    margin:20px;
+    border-radius: 16px;
+    padding:0.5rem;
+}
+.navbar-brand{
+    font-weight:500;
+    color:#009970;
+    font-size: 24px;
+    transition:0.3s color;
+}
+.navbar-brand:hover{
+    color:#009970;
+}
+.join-button{
+    text-decoration:none;
+    background-color:#009970;
+    color:white;
+    font-size:14px;
+    padding:8px 20px;
+    border-radius:50px;
+    transition: 0.3 background-color;
+}
+.join-button:hover{
+    background-color: #00b383;
+}
+.navbar-toggler{
+    border: none;
+    font-size:1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow:none;
+    outline: none;
+}
+.nav-link{
+    color:#666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+@media (min-width:991px){
+    .nav-link::before{
+        content: "";
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+        width:0;
+        height:2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        width:100%;
+        visibility:visible;
+    }
+}
+
+/* footer */
+.container .end-footer{
+    font-size: 1.3rem;
+}
+.footer-container{
+    background-color: rgba(0, 179, 131, 0.5);
+}
