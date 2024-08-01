@@ -78,6 +78,13 @@ body{
     from{ width:0}
 }
 
+@media screen and (max-width:550px){
+    .image-heading{
+        font-size:2rem;
+        letter-spacing: 0;
+    }
+}
+
 /* container images */
 .container-image{
     position: relative;
